@@ -1,0 +1,36 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "02:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: react-dom
+    versions:
+    - 16.13.0
+  - dependency-name: handlebars
+    versions:
+    - 4.7.6
+    - 4.7.7
+  - dependency-name: react-scripts
+    versions:
+    - 4.0.1
+    - 4.0.2
+  - dependency-name: elliptic
+    versions:
+    - 6.5.3
+    - 6.5.4
+  - dependency-name: http-proxy
+    versions:
+    - 1.18.1
+  - dependency-name: dot-prop
+    versions:
+    - 4.2.1
+  - dependency-name: lodash
+    versions:
+    - 4.17.20
+  - dependency-name: acorn
+    versions:
+    - 5.7.4
